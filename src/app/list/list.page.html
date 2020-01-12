@@ -3,25 +3,49 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      List
-    </ion-title>
+    <ion-title>list</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  <!--
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
-    </div>
-  -->
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h1>Hello This is tab</h1>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corrupti
+          odio facilis consectetur? Cumque saepe veniam veritatis neque
+          inventore ad ut porro eveniet minus at suscipit rem, atque et
+          recusandae.
+        </p>
+      </ion-col>
+      <ion-col style="height: 500px;" size="12">
+        <ion-tabs>
+          <ion-tab-bar slot="top">
+            <ion-tab-button tab="map">
+              <ion-icon name="map"></ion-icon>
+              <ion-label>Map</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="music">
+              <ion-label>Music</ion-label>
+              <ion-icon name="musical-note"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="movies">
+              <ion-label>Movies</ion-label>
+              <ion-icon name="videocam"></ion-icon>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
