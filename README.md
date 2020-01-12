@@ -18,9 +18,8 @@
    
 
 ## By using page Routing
-```
-home.page.html
-```
+
+<b> ```home.page.html``` </b>
 
 ```
 <ion-header>
@@ -50,9 +49,8 @@ home.page.html
 </ion-content>
 ```
 
-```
-home-routing.module
-```
+<b> ```home-routing.module``` </b>
+
 ```
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
@@ -105,9 +103,7 @@ export class HomePageRoutingModule {}
 ## By using Components
 
 
-```
-list-routing.module
-```
+<b> ```list-routing.module``` </b>
 
 ```
 import { MoviesComponent } from "./movies/movies.component";
@@ -161,9 +157,8 @@ const routes: Routes = [
 export class ListPageRoutingModule {}
 ```
 
-```
-list.page.html
-```
+
+<b> ```list.page.html``` </b>
 
 ```
 <ion-header>
